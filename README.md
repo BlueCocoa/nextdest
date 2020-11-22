@@ -14,21 +14,25 @@ However, this is NOT the end of the story. If NextDest exposes your public IPv6 
 So NextDest supports 4 modes:
 
 1. direct mode: Internet <-> Endpoint
+
 The real IPv6 on that device will be used for DNS resolving. 
 All ports can be accessed from the Internet.
 
 2. proxy mode: Internet <-> nextdest <-> Endpoint
+
 An available IP will be used from your IP pool (defined in CIDR format, in the server-side config file).
 Cloudflare (or other) only acts like a DNS, i.e, the real IP will show up in DNS record.
 Network traffic is forwarded by NextDest.
 Only ports defined in `ports` (in server side config file) can be accessed from the Internet.
 
 3. cdn mode: Internet <-> Cloudflare <-> Endpoint
+
 The real IPv6 on that device will be only used for DNS zone settings
 All network traffic will be proxied by Cloudflare (or any equivalent), i.e, only CDN's IP will show up in DNS record.
 Only 80 or 443 or other CDN provider allowed ports can be accessed from the Internet.
 
 4. hybrid mode
+
 It is the combination of proxy mode and cdn mode.
 
 ### Compile
