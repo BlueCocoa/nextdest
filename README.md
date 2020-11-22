@@ -37,7 +37,7 @@ It is the combination of proxy mode and cdn mode.
 
 ### Compile
 ```bash
-cargo build
+cargo build --release
 ```
 
 ### Usage
@@ -46,4 +46,3 @@ cp config.example.json config.json
 # edit config.json and then
 nextdest config.json
 ```
-
