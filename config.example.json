@@ -1,0 +1,9 @@
+{
+  "server": "http://[233:2333:2333::233]:5390",
+  "name": "alpha",
+  "secret": "little secret",
+  "timeout": 10,
+  "max_retry": 5,
+  "check_interval": 300,
+  "register_endpoint": "/secret_access_point"
+}

@@ -1,0 +1,21 @@
+[package]
+name = "nextdest"
+version = "0.1.0"
+authors = ["Ryza <1-ryza@users.noreply.magic.ryza.moe>"]
+edition = "2018"
+
+[dependencies]
+get_if_addrs = "0"
+reqwest = "0.9"
+serde_json = "1"
+serde = "1.0"
+serde_derive = "1.0"
+sha2 = "0"
+hmac = "0"
+hex = "0"
+aes = "0"
+base64 = "0"
+block-modes = "0"
+bytebuffer = "0"
+rand = "0"
+rust-crypto = "0"
